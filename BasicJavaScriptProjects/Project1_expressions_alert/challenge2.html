@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Challenge 2: testing onsubmit</title>
+        <script>
+            function checkAllOK() {
+              window.alert("You wrote firtname " + document.getElementById("firstname").value + " , lastname " + document.getElementById("lastname").value + " and email " + document.getElementById("email").value + " Are you sure you wish to submit these values?");
+            }
+            </script>
+    </head>
+    <body>
+        <form action="" method="post">
+            <input name="firstname" id="firstname" type="text" value="" placeholder="firstname">
+            <input name="lastname" id="lastname" type="text" value="" placeholder="lastname">
+            <input name="email" id="email" type="text" value="" placeholder="email address">
+            <input name="submit" type="submit" value="Submit" onClick="checkAllOK()">
+        </form>
+        
+        
+        
+        
+    </body>
+</html>
