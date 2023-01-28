@@ -34,12 +34,12 @@ function to_Precision() {//returns a number up to 8 digits long from 12
     document.getElementById("toPrecision").innerHTML = My_Number.toPrecision(8);
 }
 
-function to_Fixed() {//returns a number up to 8 digits long from 12
+function to_Fixed() {//rounds the number to 2 decimals
     var My_String =  123456.789012;
     document.getElementById("toFixed").innerHTML = My_String.toFixed(2);
 }
 
-function value_Of() {//returns a number up to 8 digits long from 12
+function value_Of() {//returns the primitive value of my string
     var My_String = "This is my other string";
     document.getElementById("valueOf").innerHTML = My_String.valueOf();
 }
