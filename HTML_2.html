@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Challenge 18</title>
+            <script src="Javascript/Javascript_2.js"></script>
+            <link rel="stylesheet" type="text/css" href="CSS/CSS_1.css">
+    </head>
+    <body>
+        
+        <h2>Challenge 18</h2>
+        <form id="Myform" action="" method="post" onsubmit="return validateForm()">
+            <label for="firstname">First name:</label><br>
+            <input type="text" id="firstname" name="firstname" value=""><br>
+            <p id="firstmessage" class="errorMessage"></p>
+            <label for="lastname">Last name:</label><br>
+            <input type="text" id="lastname" name="lastname" value=""><br><br>
+            <p id="lastmessage" class="errorMessage"></p>
+            <label for="age">Your age range:</label><br>
+            <select name="age" id="age">
+                <option value="">Please select</option>
+                <option value="10-19">10-19 years old</option>
+                <option value="20-29">20-29 years old</option>
+                <option value="30-39">30-39 years old</option>
+                <option value="40-49">40-49 years old</option>
+                <option value="50+">50+ years old</option>
+            </select>
+            <p id="agemessage" class="errorMessage"></p>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form> 
+        <br>
+        <br>
+
+        
+    </body>
+</html>
