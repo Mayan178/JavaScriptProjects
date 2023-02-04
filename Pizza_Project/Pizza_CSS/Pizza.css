@@ -1,0 +1,78 @@
+body {
+    background-color: darkolivegreen;
+}
+
+h1, h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:burlywood;
+}
+
+h1 {
+    /* added this centering, as I thought it looked better */
+    text-align: center;
+}
+
+div {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:antiquewhite;
+}
+
+#menuBG {
+    /* changed the width from 400px to 600px in order to cater for extra column */
+    width: 600px;
+    height: 470px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#frmMenu {
+    /* changed the width from 400px to 600px in order to cater for extra column */
+    width: 600px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+/* left and middle columns have the same properties */
+.left, .center {
+    width: 200px;
+    height: 200px;
+    float: left;
+    /* added this to align the text to the left (otherwise, centered) */
+    text-align: left;
+}
+
+
+.right {
+    width: 200px;
+    height: 200px;
+     /* added this to align the text to the left (otherwise, centered) */
+    text-align: left;
+    float: right;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin:0px auto;
+    float: left;
+}
+
+#cart {
+    top:0; margin:0px auto;
+    width: 600px;
+    height: 200px;
+     /* added this to align the text to the left (otherwise, centered) */
+    text-align: left;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 0px;
+    width: 100px;
+    height: 40px;
+}
