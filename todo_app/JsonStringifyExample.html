@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON Stringify Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <h2>Using a Car object</h2>
+
+        <p id="carDetails"></p>
+
+        <script>
+        var Car = { "make":"Peugeot", "colour":"blue", "age":3};
+        var CarJSON = JSON.stringify(Car);
+        document.getElementById("carDetails").innerHTML = CarJSON;
+        </script>
+    </body>
+</html>

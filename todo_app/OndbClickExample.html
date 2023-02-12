@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ondbclick Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+       
+        <p id="myParagraph" ondblclick="changeParagraph()">Double click me in order to turn my background colour to yellow and create an alert message!</p>
+
+        
+        <script>
+        function changeParagraph() {
+            document.getElementById("myParagraph").style.backgroundColor = "yellow";
+            alert("You have double clicked on the paragraph!");
+        }
+        </script>
+    </body>
+</html>

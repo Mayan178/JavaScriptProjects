@@ -6,15 +6,29 @@
             <link rel="stylesheet" type="text/css" href="CSS/CSS_1.css">
     </head>
     <body>
+
+        <!--- added Javascript code to enable fade in (Challenge 29) -->
+        <script>
+            document.body.classList.add('fade-out');
+
+            window.addEventListener('DOMContentLoaded', () => {
+                document.body.classList.remove('fade-out');
+            });
+        </script>
         
         <h2>Challenge 18</h2>
         <form id="Myform" action="" method="post" onsubmit="return validateForm()">
             <label for="firstname">First name:</label><br>
             <input type="text" id="firstname" name="firstname" value=""><br>
-            <p id="firstmessage" class="errorMessage"></p>
+            <p id="firstmessage" class="errorMessage"></p><br>
             <label for="lastname">Last name:</label><br>
-            <input type="text" id="lastname" name="lastname" value=""><br><br>
-            <p id="lastmessage" class="errorMessage"></p>
+            <input type="text" id="lastname" name="lastname" value=""><br>
+            <p id="lastmessage" class="errorMessage"></p><br>
+            <!-- added in for Challenge 30-->
+            <label for="phonenumber">Phone number:</label><br>
+            <input type="text" id="phonenumber" name="phonenumber" value=""><br>
+            <p id="phonemessage" class="errorMessage"></p><br>
+            <!-- end of added in for Challenge 30-->
             <label for="age">Your age range:</label><br>
             <select name="age" id="age">
                 <option value="">Please select</option>
@@ -24,7 +38,7 @@
                 <option value="40-49">40-49 years old</option>
                 <option value="50+">50+ years old</option>
             </select>
-            <p id="agemessage" class="errorMessage"></p>
+            <p id="agemessage" class="errorMessage"></p><br>
             <br><br>
             <input type="submit" value="Submit">
         </form> 

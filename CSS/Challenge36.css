@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    
+* {box-sizing: border-box;}
+
+/* button to open up the form */
+.open-button {
+background-color: purple;
+color: white;
+border: 2px solid grey;
+border-radius: 4px;
+cursor: pointer;
+padding: 10px 20px;
+/* sticky button part */
+position:fixed;
+bottom: 0;
+right: 0;
+}
+
+div.sticky {
+    background-color: yellow;
+    padding: 50px;
+    font-size: 20px;
+    position: -webkit-sticky;
+position: sticky;
+bottom: 0;
+  }
+
+  div.nonsticky {
+    background-color: pink;
+    padding: 300px;
+    font-size: 20px;
+  }
+
+/* The popup form - hidden by default */
+.popup {
+display: none;
+position: relative;
+background-color: beige;
+border: 1px solid purple;
+border-radius: 4px;
+max-width: 300px;
+z-index: 9;
+}
+
+    /* Add styles to the form container */
+    .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    }
+
+    /* Full-width input fields */
+    .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    background: #ffffff;
+    border: 1px solid purple;
+    border-radius: 4px;
+    }
+
+    /* When the inputs get focus, do something */
+    .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    border: 2px solid purple;
+    outline: none;
+    }
+
+
+    /* Subscribe button */
+    .form-container .btn {
+    background-color: purple;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 4px;
+    padding: 16px 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    }
+
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+    background-color: rgb(185, 183, 183);
+    }
+
+    .form-container .cancel:hover {
+        color: black;
+        }
+
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+    }

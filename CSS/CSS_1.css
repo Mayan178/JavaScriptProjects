@@ -1,5 +1,16 @@
-body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*added for Challenge 29 */
+    opacity: 1;
+    transition: 1s opacity;
+    /*end of added for Challenge 29 */
+}
+/*added for Challenge 29 */
+body.fade-out {
+    opacity: 0;
+    transition: none;
+  }
+/* end of added for Challenge 29 */
 #Myform {
     background-color: beige;
     border: 1px solid purple;
@@ -45,3 +56,4 @@ input:hover, select:hover {
     margin: 2px 10px;
     font-size: 14px;
 }
+

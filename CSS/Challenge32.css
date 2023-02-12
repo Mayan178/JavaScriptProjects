@@ -1,0 +1,31 @@
+
+  #myImage {
+    margin: auto;
+}
+  
+#myImage:hover {
+    animation: Shake 0.5s linear infinite;
+}
+
+/*Using keyframes for shaking an image*/
+@keyframes Shake {
+    0% {
+        transform: rotate(10deg);
+    }
+  
+    25% {
+        transform: rotate(-11deg);
+    }
+  
+    50% {
+        transform: rotate(10deg);
+    }
+  
+    75% {
+        transform: rotate(-11deg);
+    }
+  
+    100% {
+        transform: rotate(10deg);
+    }
+}

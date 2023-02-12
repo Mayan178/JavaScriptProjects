@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Challenge 27</title>
+    </head>
+    <body>
+        <p id="XML_Example"></p>
+
+        <script>
+            var XML_Parser, XML_Document;
+
+            //creates a text string
+            var Movie = "<movie>"+ "<movietitle>Blade Runner</movietitle>"+"<director>Ridley Scott</director>"+ "<starring>Harrison Ford</starring>"+"<starring>Rutger Hauer</starring>"+ "<yearout>1982</yearout>"+"</movie>";
+
+            // creates an XML DOM parser
+            XML_Parser = new DOMParser();
+
+            //creates a new XML DOM object
+            XML_Document = XML_Parser.parseFromString(Movie,"text/xml");
+
+            document.getElementById("XML_Example").innerHTML = XML_Document.getElementsByTagName("starring")[1].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>

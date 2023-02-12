@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Local Storage Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+       
+        <p id="carDetails"></p>
+
+        
+        <script>
+        // Set Item
+        localStorage.setItem("make", "Tesla");
+        // Retrieve
+        document.getElementById("carDetails").innerHTML = localStorage.getItem("make");
+        </script>
+    </body>
+</html>

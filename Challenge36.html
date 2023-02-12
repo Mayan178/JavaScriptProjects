@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Challenge 36</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="Javascript/Challenge36.js"></script>
+        <link rel="stylesheet" type="text/css" href="CSS/Challenge36.css">
+    </head>
+
+    <body>
+        <h2>Our Monthly Newsletter</h2>
+        <p>Click on the "Subscribe" button below, if you wish to sign up to our newsletter</p>
+
+        <!-- addition of extra horizontal rule -->
+        <hr>
+
+        <button class="open-button" onclick="openForm()">Subscribe</button>
+
+        <div class="popup" id="subscribeForm">
+            <form action="" class="form-container">
+                <h1>Your Details</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Subscribe</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </body>
+</html>
